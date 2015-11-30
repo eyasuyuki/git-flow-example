@@ -1,4 +1,5 @@
 image: mischef/docker-golang
+privileged: true
 env:
   - GOPATH=/var/cache/drone
 script:
