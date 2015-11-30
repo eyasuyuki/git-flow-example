@@ -1,1 +1,2 @@
 Go build test
+test
