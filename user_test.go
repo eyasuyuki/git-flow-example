@@ -8,9 +8,9 @@ import (
 )
 
 const (
-	name = "Mayama"
-	sex = "male"
-	addr = "Ebisu"
+	name = "Hirota"
+	sex = "female"
+	addr = "Saitama"
 )
 
 func TestUser(t *testing.T) {
