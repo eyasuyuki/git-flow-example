@@ -10,5 +10,6 @@ type User struct {
 	Sex string
 	Address string
 	Phone string
+	Email string
 }
 

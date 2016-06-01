@@ -12,11 +12,12 @@ const (
 	sex = "female"
 	addr = "Sakamachi"
 	phone = "03-5362-9009"
+	email = "nobody@example.com"
 )
 
 func TestUser(t *testing.T) {
 	dob := time.Now()
-	u := &User{Name: name, Birthday: dob, Sex: sex, Address: addr, Phone: phone}
+	u := &User{Name: name, Birthday: dob, Sex: sex, Address: addr, Phone: phone, Email: email}
 	if u.Name != name {
 		t.Errorf("Name %v is not same %v", u.Name, name)
 	}
@@ -31,6 +32,9 @@ func TestUser(t *testing.T) {
 	}
 	if u.Phone != phone {
 		t.Errorf("Phone %v is not same %v", u.Phone, phone)
+	}
+	if u.Email != email {
+		t.Errorf("Email %v is not same %v", u.Email, email)
 	}
 	j, _ := json.Marshal(u)
 	fmt.Printf("%v", string(j))
