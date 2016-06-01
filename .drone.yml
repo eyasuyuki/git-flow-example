@@ -1,0 +1,7 @@
+image: mischef/docker-golang
+privileged: true
+env:
+  - GOPATH=/var/cache/drone
+script:
+  - go build
+  - go test -cover -v
