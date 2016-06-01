@@ -9,5 +9,6 @@ type User struct {
 	Birthday time.Time
 	Sex string
 	Address string
+	Phone string
 }
 
